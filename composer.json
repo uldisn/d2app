@@ -1,0 +1,24 @@
+{
+    "name": "uldisn/eu_app",
+    "description": "EU ERP",
+    "keywords": ["erp","yii","phundament"],
+    "type": "yii-app",
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Uldis Nelsons",
+            "email": "uldisnelsons@gmail.com"
+        }
+    ],
+     "require": {
+        "php": ">=5.3.0",
+        "dbrisinajumi/audittrail": "dev-master",
+        "vitalets/x-editable-yii": "dev-master",
+        "uldisn/ace": "dev-master",
+        "dbrisinajumi/d2person": "dev-master",
+        "dbrisinajumi/trucks": "dev-master",        
+        "dbrisinajumi/d2finv": "dev-master",
+        "dbrisinajumi/d2fixr": "dev-master",
+        "dbrisinajumi/yeeki": "dev-master"
+     }    
+}

@@ -1,0 +1,32 @@
+/**
+ * Main less include file
+ *
+ * This file is copied from p3bootstrap. You have to run
+ * php composer.phar install --dev
+ * in order to get the files defined in the @import(s) below
+ *
+ * paths are adjustes to work from ./www/themes/THEMENAME
+ */
+
+/* import bootrap */
+@import "../../../../vendor/twitter/bootstrap/less/bootstrap.less";
+@import "../../../../vendor/twitter/bootstrap/less/responsive.less";
+/* use bootstrap with blueprint translation (for old extensions) */
+@import "../../../../vendor/phundament/lessii/translations/blueprint-bootstrap.less";
+/* override variables with local values */
+@import "variables.less";
+@import "hacks.less";
+
+/* use composer.phar require thomaspark/bootswatch */
+//@import "../../../../vendor/thomaspark/bootswatch/journal/variables.less";
+//@import "../../../../vendor/thomaspark/bootswatch/journal/bootswatch.less";
+
+/* force scrollbars */
+html {
+  overflow-y: scroll;
+}
+
+/* fix responsive images */
+img {
+  height: auto !important;
+}

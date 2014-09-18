@@ -1,0 +1,215 @@
+/* 
+    Document   : parkoil
+    Created on : Sep 27, 2013, 3:35:59 PM
+    Author     : edmunds
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.amt a{
+    
+    color: green;
+}
+
+.qnt a{
+    
+    color: blue;
+}
+
+#content {
+    
+    clear: both;
+}
+
+.table thead tr {
+    background: none repeat scroll 0 0 #F3F3F3;
+    color: #707070;
+    font-weight: normal;
+}
+
+/*.navbar{
+    
+    width : 850px; 
+    float : left;
+}
+*/
+
+
+   
+
+table tr.row-current {
+     background: none repeat scroll 0 0 #DFF0D8 ;
+ }
+ 
+ table tr.row-paid{
+     background: none repeat scroll 0 0 #DFF0D8 ;
+ }
+ 
+ table tr.row-notpaid{
+     background: none repeat scroll 0 0 #F2DEDE;
+ }
+ 
+  table tr.row-partlypaid{
+     background: none repeat scroll 0 0 #FCF8E3;
+ }
+
+table tr.row-active {
+     background: none repeat scroll 0 0 #FFFFFF;
+ }
+ 
+ 
+ table tr.row-invoiced {
+     background: none repeat scroll 0 0 #FCF8E3;
+ }
+table tr.row-inactive {
+     background: none repeat scroll 0 0 #FDFEFF;
+ }
+ 
+ table tr.row-storno {
+     background: none repeat scroll 0 0 #F2DEDE;
+ }
+ 
+ table tr.row-potential {
+     background: none repeat scroll 0 0 #FFFFB5;
+ }
+ 
+ table tr.row-closed {
+     background: none repeat scroll 0 0 #d8dfe8;
+ }
+ 
+  table tr.row-blacklist {
+     background: none repeat scroll 0 0 #d8dfe8;
+ }
+
+table tr.selected {
+    background: none repeat scroll 0 0 #BCE774;
+}
+table tr.selected:hover {
+    background: none repeat scroll 0 0 #CCFF66;
+}
+table tbody tr:hover {
+    background: none repeat scroll 0 0 #ECFBD4;
+}
+
+table.toolbar tbody tr:hover
+{
+  background:none;  
+}
+
+table.horizontal-form td{
+     padding: 5px 5px; 
+}
+
+table.horizontal-form tbody tr:hover
+{
+  background:none;  
+
+}
+
+table td.numeric-column {
+    text-align:right;
+    width:70px;
+    font-family: Monaco, Menlo, "Courier New", monospace;
+}
+
+table td.total-row {
+    text-align:right;
+    font-weight:bold;
+}
+
+table.grid_cell td{
+    padding: 3px 3px;
+}
+
+div.search-form{
+    
+    width: 300px;
+    display: inline-block;
+
+}
+div.export-form{
+    
+    width: 400px;
+    display: block;
+
+}
+
+
+div.header:before,
+div.header:after{
+   display: table;
+  content: "";
+  line-height: 0;
+}
+
+
+input.excel-button[type="button"]{
+    
+    background-position: 0% 0%;
+    background-color: transparent;
+    background-image: url("img/excel64.png");
+    width : 64px;
+    height: 64px;
+}
+
+
+input.pdf-button[type="button"]{
+    
+    background-position: 0% 0%;
+    background-color: transparent;
+    background-image: url("img/PDF64.png");
+    width : 64px;
+    height: 64px;
+}
+
+li.nav-condensed{
+    
+    line-height:  15px;
+}
+
+li.nav-condensed  a {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  line-height: 15px;
+  border: 1px solid transparent;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+}
+
+.minwith3 {
+    min-width: 300px;
+}
+
+.pivot-grid th.grid-header{
+    
+    text-align: center;
+    width: 80px;
+}
+
+.pivot-grid th.grid-header-first{
+    
+    text-align: center;
+    width: 150px;
+}
+
+.pivot-grid th.grid-header-last{
+    text-align: center;
+    width: 50px;
+}
+
+.filters input.date10 {
+    width: 90px;
+}
+
+.filters input.date20 {
+    width: 160px;
+}
+
+.row {
+    margin-left: 0;
+}
+
+.grid-view-no-details {
+    padding-top: 0px;
+}

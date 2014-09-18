@@ -1,0 +1,179 @@
+/* 
+    Document   : parkoil_ace
+    Created on : Jan 9, 2014, 2:51:30 PM
+    Author     : edmunds
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+a {
+    color: #F14E32;
+    text-decoration: none;
+}
+
+.page-content {
+    padding: 65px 20px 24px;
+}
+
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 20px;
+}
+
+
+.ace-settings-container {
+    top: 65px;
+ }
+
+ .nav-list > li.active > a, .nav-list > li.active > a:hover, .nav-list > li.active > a:focus, .nav-list > li.active > a:active {
+    background-color: #FFFFFF;
+    color: #F14E32;
+    font-weight: bold;
+   
+ }
+ 
+ 
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    background-color: #FFFFFF;
+    border-color: #F14E32 #C5D0DC rgba(0, 0, 0, 0);
+    border-top: 2px solid #F14E32;
+}    
+ 
+ .nav-list > li.active:after {
+    border-right: 2px solid #F14E32;
+ 
+ }   
+ 
+ .nav-list li.active > a:after {
+    
+    border-color: rgba(0, 0, 0, 0) #F14E32 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+ }  
+ 
+ .nav-list > li .submenu > li.active > a {
+    color: #F14E32;
+}
+
+.nav-list > li > a:hover {
+  background-color: #FFF;
+  color: #f59942;
+}  
+
+.nav-list > li > a:focus {
+  background-color: #f9f9f9;
+  color: #F14E32;
+}  
+    
+ .page-header h1,h2,h3 {
+    color: #F14E32;
+ }   
+ 
+ h2 {
+     
+     font-size: 20px;
+ }
+ 
+ .navbar .navbar-inner {
+    background: none repeat scroll 0 0 #efefef;
+    border-bottom: 0px solid #CCCCCC;
+ }
+ 
+ 
+ .ace-nav > li.dark-beige {
+    background: none repeat scroll 0 0 #bababa;
+}
+    
+.user-info {
+  max-width: 200px;
+}  
+
+
+div.logo{
+    
+    width: 190px;
+    height: 60px;
+    float : left;
+    background-color: #efefef;
+    margin-left: 0px;
+   
+}
+
+div.header-logon{
+    
+    height: 63px;
+    float : left;
+    line-height: 63px;
+    font-size: 23px;
+    padding-right: 10px;
+    padding-top: 3px;  
+}
+
+.sidebar.fixed, .sidebar.sidebar-fixed {
+    left: 0;
+    position: fixed;
+    top: 140px;
+    z-index: 1029;
+}
+
+ .sidebar:before {
+    background-color: #efefef;
+    border-right: 1px solid #efefef;
+    bottom: 0;
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 189px;
+    z-index: -1;
+}
+
+.navbar .brand {
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 20px 20px;
+    margin-left: 10px;
+    height: 20px;
+}   
+
+.ace-nav > li {
+    background: none repeat scroll 0 0 #2E6589;
+    border-left: 1px solid #DDDDDD;
+    line-height: 68px;
+    max-height: 68px;
+    padding: 0;
+    position: relative;
+}
+
+.nav-list > li > a:hover:before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: -1px;
+  bottom: 0;
+  left: 0;
+  width: 3px;
+  max-width: 3px;
+  overflow: hidden;
+  background-color: #F59942;
+}
+
+
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(DXI1ORHCpsQm3Vp6mXoaTRsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+  //src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v7/DXI1ORHCpsQm3Vp6mXoaTRsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(uYKcPVoh6c5R0NpdEY5A-Q.woff) format('woff');
+  //src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v7/uYKcPVoh6c5R0NpdEY5A-Q.woff) format('woff');
+}
