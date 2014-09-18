@@ -47,22 +47,25 @@ $consoleConfig = array(
             // alias of the path where you extracted the zip file
             'class'                 => 'vendor.yiiext.migrate-command.EMigrateCommand',
             // this is the path where you want your core application migrations to be created
-            'migrationPath'         => 'application.migrations', //9
+            'migrationPath'         => 'application.migrations1', //9
             // the name of the table created in your database to save versioning information
             'migrationTable'        => 'migration',
             // the application migrations are in a pseudo-module called "core" by default
             'applicationModuleName' => 'core',
             // define all available modules (if you do not set this, modules will be set from yii app config)
             'modulePaths'           => array(
-                //'d2finv'                  => 'vendor.dbrisinajumi.d2finv.migrations',
+                
                 'audittrail'              => 'vendor.dbrisinajumi.audittrail.migrations', //1
-                'yii-user'                => 'vendor.uldisn.yii-user.migrations',           //2
-                'yeeki'                   => 'vendor.dbrisinajumi.yeeki.migrations',      //3
-                'd2files'                 => 'vendor.dbrisinajumi.d2files.migrations',      //4
-                'd2person'                => 'vendor.dbrisinajumi.d2person.migrations',    //5
-                'd2company'               => 'vendor.dbrisinajumi.d2company.migrations',    //6
-                'd1files'                 => 'vendor.dbrisinajumi.d1files.migrations',    //8 for d2companies
-                'd2tasks'                 => 'vendor.dbrisinajumi.d2tasks.migrations',    //9
+                //'core_init'               => 'application.migrations_init',
+                //'yii-user'                => 'vendor.uldisn.yii-user.migrations',           //2
+                //'d2files'                 => 'vendor.dbrisinajumi.d2files.migrations',      //4
+                //'d2person'                => 'vendor.dbrisinajumi.d2person.migrations',    //5
+                //'d2company'               => 'vendor.dbrisinajumi.d2company.migrations',    //6
+                //'core_main'                    => 'application.migrations',
+                //'yeeki'                   => 'vendor.dbrisinajumi.yeeki.migrations',      //8
+                //'d1files'                 => 'vendor.dbrisinajumi.d1files.migrations',    //8 for d2companies
+                //no ready for init 'd2tasks'                 => 'vendor.dbrisinajumi.d2tasks.migrations',    //9
+                //no ready for init 'd2finv'                  => 'vendor.dbrisinajumi.d2finv.migrations',
                 
             ),
             // you can customize the modules migrations subdirectory which is used when you are using yii module config
