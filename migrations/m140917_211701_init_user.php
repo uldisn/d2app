@@ -139,7 +139,14 @@ class m140917_211701_init_user extends CDbMigration {
             INSERT INTO `authassignment` (`itemname`, `userid`) VALUES ('SysAdmin', '1');     
             INSERT INTO `authitem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES('UserAdmin','2','UserAdmin',NULL,'N;');
             INSERT INTO `authassignment` (`itemname`, `userid`) VALUES ('UserAdmin', '1');        
+  
+            insert into `authitemchild` (`parent`, `child`) values('Administrator','Company.fullcontrol');
+            insert into `authitemchild` (`parent`, `child`) values('Administrator','Company.*');
             
+            INSERT INTO `authitemchild` VALUES('Administrator', 'D2person.PprsPerson.Create');
+            INSERT INTO `authitemchild` VALUES('Administrator', 'D2person.PprsPerson.Update');
+            INSERT INTO `authitemchild` VALUES('Administrator', 'D2person.PprsPerson.Delete');
+            INSERT INTO `authitemchild` VALUES('Administrator', 'D2person.PprsPerson.View'); 
 
 
             ";
