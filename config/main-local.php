@@ -39,7 +39,7 @@ $localConfig = array(
         'db' => array(
             'tablePrefix' => '',
             // MySQL
-            'connectionString' => 'mysql:host=localhost:4040;dbname=cb_01',
+            'connectionString' => 'mysql:host=localhost;dbname=app_01',
             'emulatePrepare' => true,
             'username' => 'root',
             'password' => '111',
@@ -54,12 +54,12 @@ $localConfig = array(
                 array(
                     'class'  => 'CFileLogRoute',
                     'levels' => 'error, warning',
-                    'logPath' => 'G:/xdocs/app-0.21.0_20131018/logfiles/uldisn_eu_app',
+                    'logPath' => 'G:/xdocs/app-0.21.0_20131018/logfiles/uldisn_d2app',
                 ),
-//                array(
-//                    'class'=>'vendor.malyshev.yii-debug-toolbar.YiiDebugToolbarRoute',
-//                    'ipFilters'=>array('127.0.0.1','192.168.1.215'),
-//                ),
+                array(
+                    'class'=>'vendor.malyshev.yii-debug-toolbar.YiiDebugToolbarRoute',
+                    'ipFilters'=>array('127.0.0.1','192.168.1.215'),
+                ),
             ),
         ),
         
