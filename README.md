@@ -4,7 +4,10 @@ Sagatavošana
 ===========
 * izveido aap direktriju zem vendor/uldisn. Nosaukums: app_[projekts]
 * iekopē šo repositoriju šajādirektorijā (neklonē ar Git)
-* Izveido projekta DB. ([project]_01) un saliek connnection datus config/main-local.php
+* Izveido projekta DB. ([project]_01) 
+* config/main-local.php
+ * saliek connnection datus
+ * loging direktoriju: components=>log=>routes(class=CFileLogRoute;logPath='...')
 
 Datubāze
 ===========
@@ -16,7 +19,7 @@ Migrācija (yiic migrate) jālaiž pa sekojošiem soļiem, atkomentējot config/
 * d2files
 * d2person
 * d2company
-* core_main
+* core_main - izveido administratoru "d2app_admin"
 * yeeki
 * d1files
 
@@ -27,7 +30,7 @@ WWW
 * palaiž web pārlūku. Ir izveidots noklusētais admins d2app_admin/carnikava
 
 
-Uzlabojumi
+Jāuzlabo
 ===========
 Composeri ir opcija aplikācijas izvedei. Varētu arī iekļaut visu migraciju
 
