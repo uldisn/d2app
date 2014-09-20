@@ -92,10 +92,8 @@ class m140917_211701_init_user extends CDbMigration {
         $sql = " 
             insert into `ccgr_group` (`ccgr_id`, `ccgr_name`, `ccgr_notes`, `ccgr_hide`) values('1','SysComapny',NULL,'0');
             insert into `ccgr_group` (`ccgr_id`, `ccgr_name`, `ccgr_notes`, `ccgr_hide`) values('3','Customer',NULL,'0');
-            insert into `ccxg_company_x_group` 
-            (`ccxg_ccmp_id`, `ccxg_ccgr_id`) 
-            values
-            ('1','2');
+            insert into `ccxg_company_x_group` (`ccxg_ccmp_id`, `ccxg_ccgr_id`) values ('1','1');
+            insert into `ccxg_company_x_group` (`ccxg_ccmp_id`, `ccxg_ccgr_id`) values ('1','3');
 
                 ";
         $this->execute($sql);            
