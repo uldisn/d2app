@@ -98,12 +98,16 @@ $mainConfig = array(
         'vendor.dbrisinajumi.d2person.models.*',                
     ),
     'modules'    => array(
+        'session' => array (
+            'sessionName' => 'kods',
+            'cookieMode' => 'only',
+            'class' => 'system.web.CDbHttpSession',
+            'connectionID' => 'db',
+            'sessionTableName' => 's_sessions',
+        ),
         'wiki' => array(
             'class' => 'vendor.dbrisinajumi.yeeki.WikiModule',
         ),
-//        'hill' => array( //++
-//            'class' => 'vendor.uldisn.hill.HillModule',
-//        ),
         'd2person' => array( //++
             'class' => 'vendor.dbrisinajumi.d2person.D2personModule',
             'defaultController' => 'pprsPerson',

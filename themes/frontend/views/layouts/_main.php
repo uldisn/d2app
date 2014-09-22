@@ -223,27 +223,6 @@ $this->widget(
 			<i class="icon-double-angle-up icon-only bigger-110"></i>
 		</a>
 
-        
-       
-
-<!-- /container -->
-
-<?php
-
-if (Yii::app()->user->checkAccess('Editor') && FALSE) {
-    ?>
-<div id="backend">
-    <?php
-    $cs->registerCssFile($app_asset_path . '/backend.css');
-    $this->renderFile(
-        Yii::getPathOfAlias('application.themes.backend2.views.layouts') . DIRECTORY_SEPARATOR . '_navbar.php'
-    );
-    ?>
-</div>
-    <?php
-}
-?>
-
 <?php
 
 // help
