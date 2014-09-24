@@ -99,11 +99,8 @@ class m140917_211701_init_user extends CDbMigration {
         $this->execute($sql);            
 
         $sql = " 
-            insert into `ccuc_user_company` 
-            (`ccuc_ccmp_id`, `ccuc_person_id`, `ccuc_status`) 
-            values
-            ('1','1','SYS');
-
+            insert into `ccuc_user_company` (`ccuc_ccmp_id`, `ccuc_person_id`, `ccuc_status`) values ('1','1','SYS');
+            INSERT INTO `ccuc_user_company` (`ccuc_ccmp_id`, `ccuc_person_id`, `ccuc_status`) VALUES ('1', '1', 'PERSON'); 
                 ";
         $this->execute($sql);            
 

@@ -75,8 +75,8 @@ $aMenuOfficeCompanies = array(
 
             foreach (Yii::app()->sysCompany->getClientCompanies() as $mCcmp) {
                 $aMenuOfficeCompanies['items'][] = array(
-                'label' => $mCcmp->ccucCcmp->ccmp_name,
-                            'url' => array_merge(array(''), $_GET, array(Yii::app()->sysCompany->data_key => $mCcmp->ccucCcmp->ccmp_id)),
+                'label' => $mCcmp['ccmp_name'],
+                            'url' => array_merge(array(''), $_GET, array(Yii::app()->sysCompany->data_key => $mCcmp['ccmp_id'])),
     );
 }
         }
