@@ -106,20 +106,10 @@ class m140917_211701_init_user extends CDbMigration {
 
         $sql = " 
             INSERT INTO `cccd_custom_data` (
-              `cccd_ccmp_id`,
-              `type`,
-              `agreement_number`,
-              `agreement_date`,
-              `payment_terms`,
-              `base_fcrn_id`
+              `cccd_ccmp_id`
             ) 
             VALUES
               (
-                '1',
-                '0',
-                '',
-                '0000-00-00',
-                '0',
                 '1'
               ) ;
 
