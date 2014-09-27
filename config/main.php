@@ -461,6 +461,7 @@ $mainConfig = array(
     // application-level parameters that can be accessed
     // using Yii::app()->params['paramName']
     'params'     => array(
+        'ccgr_group_sys_company'   => 1,        
         // this is used in contact page
         'adminEmail'                => 'webmaster@example.com',
         // global Phundament 3 parameters
