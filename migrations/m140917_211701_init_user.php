@@ -84,7 +84,7 @@ class m140917_211701_init_user extends CDbMigration {
                     NULL,null,NULL,
                     NULL,NULL,null,
                     NULL,NULL,'ACTIVE',NULL,
-                    '','ccmp1@example.com',NULL,NULL,NULL); 
+                    '','ccmp1@example.com',NULL,NULL,1); 
 
                 ";
         $this->execute($sql);            
