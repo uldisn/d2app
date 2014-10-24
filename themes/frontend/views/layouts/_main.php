@@ -32,6 +32,7 @@
     $cs->registerCssFile($asset_link . '/css/ace-responsive.min.css');
     $cs->registerCssFile($asset_link . '/css/ace-skins.min.css');
     $cs->registerCssFile($asset_link_ace_add . '/css/d2-ace.css');
+    Yii::app()->clientScript->scriptMap=array('jquery-ui.css' => $asset_link . '/css/jquery-ui-1.10.3.full.min.css');    
     //$cs->registerCssFile($app_asset_path . '/parkoil-ace.css');    
     //$cs->registerCssFile($app_asset_path . '/parkoil.css');    
     
