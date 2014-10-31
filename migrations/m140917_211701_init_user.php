@@ -32,15 +32,16 @@ class m140917_211701_init_user extends CDbMigration {
         $pf_table = Yii::app()->getModule('user')->tableProfileFields;
         $sql = " 
             insert  into `{$pf_table}`
-                (`id`,`varname`,`title`,`field_type`,`field_size`,`field_size_min`,`required`,`match`,`range`,`error_message`,`other_validator`,`default`,`widget`,`widgetparams`,`position`,`visible`) 
+                (`varname`,`title`,`field_type`,`field_size`,`field_size_min`,`required`,`match`,`range`,`error_message`,`other_validator`,`default`,`widget`,`widgetparams`,`position`,`visible`) 
                 values 
-                (1,'first_name','First Name','VARCHAR',255,3,2,'','','Incorrect First Name (length between 3 and 50 characters).','','','','',1,3),
-                (2,'last_name','Last Name','VARCHAR',255,3,2,'','','Incorrect Last Name (length between 3 and 50 characters).','','','','',2,3),
-                (3,'type','Type','tinyint',2,2,2,'','','',NULL,'','',NULL,3,3),
-                (6,'phone','Phone','VARCHAR',15,7,0,'','','','','','','',0,3),
-                (7,'email','Email','VARCHAR',100,5,0,'#^[_a-z0-9-]+(\\.[_a-z0-9-]+)*@[a-z0-9-]+(\\.[a-z0-9-]+)*(\\.[a-z]{2,4})$#','','incorrect email','','','','',0,3),
-                (8,'ccmp_id','company','INTEGER',10,0,0,'','','','','0','','',0,0),(9,'sys_ccmp_id','company','INTEGER',10,0,0,'','','','','0','','',0,0),
-                (10,'person_id','Person','smallint',5,0,0,'','','',NULL,'0','',NULL,0,0)
+                ('first_name','First Name','VARCHAR',255,3,2,'','','Incorrect First Name (length between 3 and 50 characters).','','','','',1,3),
+                ('last_name','Last Name','VARCHAR',255,3,2,'','','Incorrect Last Name (length between 3 and 50 characters).','','','','',2,3),
+                ('type','Type',  'tinyint', 2,2,2,'','','',NULL,'','',NULL,3,3),
+                ('phone','Phone','VARCHAR',15,7,0,'','','',  '','','',  '',0,3),
+                ('email','Email','VARCHAR',100,5,0,'#^[_a-z0-9-]+(\\.[_a-z0-9-]+)*@[a-z0-9-]+(\\.[a-z0-9-]+)*(\\.[a-z]{2,4})$#','','incorrect email','','','','',0,3),            
+                ('ccmp_id','company','INTEGER',10,0,0,'','','','','0','','',0,0),
+                ('sys_ccmp_id','company','INTEGER',10,0,0,'','','','','0','','',0,0),
+                ('person_id','Person','smallint',5,0,0,'','','',NULL,'0','',NULL,0,0)
                 ;
 
                 ";
@@ -161,4 +162,3 @@ class m140917_211701_init_user extends CDbMigration {
 		$this->down();
 	}
 }
-?>
