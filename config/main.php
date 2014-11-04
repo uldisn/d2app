@@ -95,7 +95,9 @@ $mainConfig = array(
         'vendor.bwoester.yii-static-events-component.*',
         'vendor.bwoester.yii-event-interceptor.*',
         'vendor.dbrisinajumi.d2person.*',                
-        'vendor.dbrisinajumi.d2person.models.*',                
+        'vendor.dbrisinajumi.d2person.models.*',          
+        'vendor.uldisn.ace.*', 
+        'vendor.uldisn.ace.widgets.*',         
     ),
     'modules'    => array(
         'session' => array (
