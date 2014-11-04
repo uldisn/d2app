@@ -47,7 +47,7 @@ $consoleConfig = array(
             // alias of the path where you extracted the zip file
             'class'                 => 'vendor.yiiext.migrate-command.EMigrateCommand',
             // this is the path where you want your core application migrations to be created
-            'migrationPath'         => 'application.migrations1', //9
+            'migrationPath'         => 'application.migrations', //9
             // the name of the table created in your database to save versioning information
             'migrationTable'        => 'migration',
             // the application migrations are in a pseudo-module called "core" by default
@@ -61,7 +61,7 @@ $consoleConfig = array(
                 //'d2files'                 => 'vendor.dbrisinajumi.d2files.migrations',      //4
                 //'d2person'                => 'vendor.dbrisinajumi.d2person.migrations',    //5
                 //'d2company'               => 'vendor.dbrisinajumi.d2company.migrations',    //6
-                //'core_main'                    => 'application.migrations',
+                //'core_main'                    => 'application.migrations_init2',
                 //'yeeki'                   => 'vendor.dbrisinajumi.yeeki.migrations',      //8
                 //'d1files'                 => 'vendor.dbrisinajumi.d1files.migrations',    //8 for d2companies
                 //no ready for init 'd2tasks'                 => 'vendor.dbrisinajumi.d2tasks.migrations',    //9
