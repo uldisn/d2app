@@ -22,8 +22,6 @@ class m140917_211701_init_user extends CDbMigration {
                 ADD COLUMN `type` tinyint(4)   NOT NULL after `last_name` , 
                 ADD COLUMN `ccmp_id` int(10)   NOT NULL DEFAULT 0 after `type` , 
                 ADD COLUMN `sys_ccmp_id` int(10) unsigned   NULL after `ccmp_id` , 
-                ADD COLUMN `phone` varchar(15)  COLLATE utf8_general_ci NULL after `sys_ccmp_id` , 
-                ADD COLUMN `email` varchar(100)  COLLATE utf8_general_ci NULL after `phone` , 
                 ADD COLUMN `person_id` smallint(5) unsigned   NULL after `email` 
                 ;                
                 ";
@@ -34,11 +32,9 @@ class m140917_211701_init_user extends CDbMigration {
             insert  into `{$pf_table}`
                 (`varname`,`title`,`field_type`,`field_size`,`field_size_min`,`required`,`match`,`range`,`error_message`,`other_validator`,`default`,`widget`,`widgetparams`,`position`,`visible`) 
                 values 
-                ('first_name','First Name','VARCHAR',255,3,2,'','','Incorrect First Name (length between 3 and 50 characters).','','','','',1,3),
-                ('last_name','Last Name','VARCHAR',255,3,2,'','','Incorrect Last Name (length between 3 and 50 characters).','','','','',2,3),
+                ('first_name','First Name','VARCHAR',255,3,1,'','','Incorrect First Name (length between 3 and 50 characters).','','','','',1,3),
+                ('last_name','Last Name','VARCHAR',255,3,1,'','','Incorrect Last Name (length between 3 and 50 characters).','','','','',2,3),
                 ('type','Type',  'tinyint', 2,2,2,'','','',NULL,'','',NULL,3,3),
-                ('phone','Phone','VARCHAR',15,7,0,'','','',  '','','',  '',0,3),
-                ('email','Email','VARCHAR',100,5,0,'#^[_a-z0-9-]+(\\.[_a-z0-9-]+)*@[a-z0-9-]+(\\.[a-z0-9-]+)*(\\.[a-z]{2,4})$#','','incorrect email','','','','',0,3),            
                 ('ccmp_id','company','INTEGER',10,0,0,'','','','','0','','',0,0),
                 ('sys_ccmp_id','company','INTEGER',10,0,0,'','','','','0','','',0,0),
                 ('person_id','Person','smallint',5,0,0,'','','',NULL,'0','',NULL,0,0)
