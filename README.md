@@ -18,8 +18,8 @@ Composer
 * start php composer.phar update
 * if require some packages, load by composer: php composer.phar rewquire dbrisinajumi/audittrail dev-master 
 
-Datubāze
-===========
+Database
+========
 * Crreate MySql Database. ([project]_01) 
 * vendor/uldisn/app_[projekt name]/config/main-local.php
  * set mysql connection detyails
