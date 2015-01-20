@@ -1,17 +1,33 @@
-Savākts viss, lai uzstādītu jaunu aplikāciju
-
-Sagatavošana
+Composer
 ===========
-* izveido aap direktriju zem vendor/uldisn. Nosaukums: app_[projekts]
-* iekopē šo repositoriju šajādirektorijā (neklonē ar Git)
-* Izveido projekta DB. ([project]_01) 
-* config/main-local.php
- * saliek connnection datus
- * loging direktoriju: components=>log=>routes(class=CFileLogRoute;logPath='...')
+* in root directory to composer.json add:
+
+{
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"http://packages.phundament.com"
+        }
+	]
+}
+ 
+
+* create directory vendor/uldisn/app_[projekt name] for example /uldisn/app_d2app
+* Copy https://github.com/uldisn/d2app (no gitclone) to vendor/uldisn/app_[projekt name]
+* start php composer.phar install
+* start php composer.phar update
+* if require some packages, load by composer: php composer.phar rewquire dbrisinajumi/audittrail dev-master 
 
 Datubāze
 ===========
-Migrācija (yiic migrate) jālaiž pa sekojošiem soļiem, atkomentējot config/console.php attiecīgo rindu:
+* Crreate MySql Database. ([project]_01) 
+* vendor/uldisn/app_[projekt name]/config/main-local.php
+ * set mysql connection detyails
+ * set loging directory: components=>log=>routes(class=CFileLogRoute;logPath='...')
+
+Migration
+=========
+migration (yiic migrate) start step by step uncomenting uldisn/d2app/config/console.php follow rows:
 
 * audittrail
 * core_init
@@ -21,17 +37,13 @@ Migrācija (yiic migrate) jālaiž pa sekojošiem soļiem, atkomentējot config/
 * d2company
 * core_main - izveido administratoru "d2app_admin"
 * yeeki
-* d1files
 
 WWW
-===========
-* Jaizveido www direktorijs un index.php ceļš janorada un config/main.php.
-* jānokonfigurē apache
-* palaiž web pārlūku. Ir izveidots noklusētais admins d2app_admin/carnikava
+===
+* Create directrie www and in index.php path to /vendor/uldisn/d2app/config/main.php.
+* config apache
+* Open web apge. Default logon for admin: d2app_admin/carnikava
 
 
-Jāuzlabo
-===========
-Composeri ir opcija aplikācijas izvedei. Varētu arī iekļaut visu migraciju
 
 
