@@ -17,6 +17,32 @@ Composer
 * start php composer.phar install
 * start php composer.phar update
 * if require some packages, load by composer: php composer.phar rewquire dbrisinajumi/audittrail dev-master 
+* final directory structure:
+ * vendor
+  *  clevertech
+  *  composer
+  *  cornernote
+  *  crisu83
+  *  dbrisinajumi
+   *  audittrail
+   *  d2company
+   *  d2files
+   *  d2person
+   *  DbrLib
+   *  gii-template-collection
+   *  yeeki
+  *  samdark
+  *  schmunk42
+  *  uldisn
+   *  ace
+   *  app_[project]
+   *  yii-user
+  *  vitalets
+  *  yiiext
+  *  yiisoft
+ * www
+ * logs
+ * upload
 
 Database
 ========
