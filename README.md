@@ -45,6 +45,11 @@ Composer
   logs
   upload
 ```
+ACE Admin
+=========
+
+ACe Admin version ace-v1.2--bs-v2.3.x copy to vendor/responsiweb/ace-v1.2--bs-v2.3.x
+
 Database
 ========
 * Crreate MySql Database. ([project]_01) 
