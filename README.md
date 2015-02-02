@@ -1,15 +1,35 @@
 Composer
 ===========
 * in root directory to composer.json add:
-
+```
 {
+    "name":"ks",
+    "type":"yii-application",
+    "authors":[
+        {
+            "name":"Uldis Nelsons",
+            "email":"uldis@weberp.lv",
+            "homepage":"http://www.weberp.lv"
+        }
+    ],
     "repositories":[
         {
             "type":"composer",
             "url":"http://packages.phundament.com"
-        }
-	]
+        },
+        {
+                "type": "vcs",
+                "url": "https://github.com/DBRisinajumi/DbrLib"
+        }		
+    ],
+    "minimum-stability":"dev",
+    "require":{
+        "php":">=5.3.2",
+        "uldisn/app_project": "dev-master"
+
+    }
 }
+```
  
 
 * create directory vendor/uldisn/app_[projekt name] for example /uldisn/app_d2app
