@@ -14,7 +14,7 @@
         "php": ">=5.3.0",
         "yiisoft/yii":"1.1.16",
         "crisu83/yii-rights":"@dev",
-        "clevertech/yiibooster":"3.*",
+        "clevertech/yiibooster":"2.1.*",
         "yiiext/migrate-command":"dev-master#35f315b as 0.7.2.1",
         "schmunk42/multi-theme":"0.1.*",
         "phundament/p3extensions":"0.17.*",        
@@ -26,6 +26,7 @@
         "uldisn/yii-user": "dev-master",
         "dbrisinajumi/DbrLib": "dev-master",
         "dbrisinajumi/d2company": "dev-master",
-        "dbrisinajumi/d2person": "dev-master"
+        "dbrisinajumi/d2person": "dev-master",
+        "dbrisinajumi/yeeki": "dev-master"
      }    
 }
