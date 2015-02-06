@@ -36,7 +36,7 @@ Composer
 * Copy https://github.com/uldisn/d2app (no gitclone) to vendor/uldisn/app_[projekt name]
 * start php composer.phar install
 * start php composer.phar update
-* if require some packages, load by composer: php composer.phar rewquire dbrisinajumi/audittrail dev-master 
+* if require some packages, load by composer: php composer.phar require dbrisinajumi/audittrail dev-master 
 * final directory structure:
 ```
   vendor
@@ -92,7 +92,7 @@ migration (yiic migrate) start step by step uncomenting uldisn/d2app/config/cons
 
 WWW
 ===
-* Create directrie www and in index.php path to /vendor/uldisn/d2app/config/main.php.
+* Create directory www and in index.php path to /vendor/uldisn/d2app/config/main.php.
 * config apache
 * Open web apge. Default logon for admin: d2app_admin/carnikava
 
