@@ -27,7 +27,7 @@ EOS;
 
     public function run($args) {
 
-        if (!self::confirm('Vai uzstādīsiet DB parametrus')) {
+        if (!self::confirm('You are ready set database settings?')) {
             return true;
         }
 
