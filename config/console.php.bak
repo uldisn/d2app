@@ -42,9 +42,6 @@ $consoleConfig = array(
         'database'      => array(
             'class' => 'vendor.schmunk42.database-command.EDatabaseCommand',
         ),
-        'inst_d2app'      => array(
-            'class' => 'application.commands.D2AppInstCommand',
-        ),
         // composer callback
         'migrate'       => array(
             // alias of the path where you extracted the zip file
@@ -59,14 +56,14 @@ $consoleConfig = array(
             'modulePaths'           => array(
                 
                 'audittrail'              => 'vendor.dbrisinajumi.audittrail.migrations', //1
-                'core_init'               => 'application.migrations_init',
-                'yii-user'                => 'vendor.uldisn.yii-user.migrations',           //2
-                'd2files'                 => 'vendor.dbrisinajumi.d2files.migrations',      //4
-                'd2person'                => 'vendor.dbrisinajumi.d2person.migrations',    //5
-                'd2company'               => 'vendor.dbrisinajumi.d2company.migrations',    //6
-                'core_main'                    => 'application.migrations_init2',
-                'yeeki'                   => 'vendor.dbrisinajumi.yeeki.migrations',      //8
-                'd1files'                 => 'vendor.dbrisinajumi.d1files.migrations',    //8 for d2companies
+                //'core_init'               => 'application.migrations_init',
+                //'yii-user'                => 'vendor.uldisn.yii-user.migrations',           //2
+                //'d2files'                 => 'vendor.dbrisinajumi.d2files.migrations',      //4
+                //'d2person'                => 'vendor.dbrisinajumi.d2person.migrations',    //5
+                //'d2company'               => 'vendor.dbrisinajumi.d2company.migrations',    //6
+                //'core_main'                    => 'application.migrations_init2',
+                //'yeeki'                   => 'vendor.dbrisinajumi.yeeki.migrations',      //8
+                //'d1files'                 => 'vendor.dbrisinajumi.d1files.migrations',    //8 for d2companies
                 //no ready for init 'd2tasks'                 => 'vendor.dbrisinajumi.d2tasks.migrations',    //9
                 //no ready for init 'd2finv'                  => 'vendor.dbrisinajumi.d2finv.migrations',
                 
@@ -86,9 +83,9 @@ $consoleConfig = array(
 //            'themePath'       => 'application.themes',
 //        ),
 //        // composer callback
-        'p3echo'        => array(
-            'class' => 'application.commands.P3EchoCommand',
-        ),
+//        'p3echo'        => array(
+//            'class' => 'application.commands.P3EchoCommand',
+//        ),
 //        // composer callback
 //        'p3media'       => array(
 //            'class' => 'vendor.phundament.p3media.commands.P3MediaCommand',
@@ -124,20 +121,6 @@ $consoleConfig = array(
     CMap::mergeArray(
             $mainConfig['params'],
             array(
-        'composer.callbacks' => array(
-            'post-install' => array(
-                    array('yiic', 'inst_d2app'),
-                    array('yiic', 'migrate', '--interactive=1','--module=audittrail'),
-                    array('yiic', 'migrate', '--interactive=1','--module=core_init'),
-                    array('yiic', 'migrate', '--interactive=1','--module=yii-user'),
-                    array('yiic', 'migrate', '--interactive=1','--module=d2files'),
-                    array('yiic', 'migrate', '--interactive=1','--module=d2person'),
-                    array('yiic', 'migrate', '--interactive=1','--module=d2company'),
-                    array('yiic', 'migrate', '--interactive=1','--module=core_main'),
-                    array('yiic', 'migrate', '--interactive=1','--module=yeeki'),
-                    array('yiic', 'migrate', '--interactive=1','--module=d1files'),
-            ),            
-        ),    
 //        'composer.callbacks' => array(
 //            // command and args for Yii command runner
 //            'yiisoft/yii-install'              => $webappCommand,
