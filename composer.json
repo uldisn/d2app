@@ -1,6 +1,6 @@
 {
-    "name": "uldisn/eu_app",
-    "description": "EU ERP",
+    "name": "uldisn/d2app",
+    "description": "YII ERP",
     "keywords": ["erp","yii","phundament"],
     "type": "yii-app",
     "license": "BSD-2-Clause",
