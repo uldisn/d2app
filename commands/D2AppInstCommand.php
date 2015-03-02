@@ -31,22 +31,36 @@ EOS;
             return true;
         }
 
-        $db_name = self::prompt(' DB Name:');
-        $db_user = self::prompt(' User Name:');
-        $db_password = self::prompt(' Password:');
+        $db_host = self::prompt(' Host:','127.0.0.1');
+        $db_name = self::prompt(' DB Name:','d2app');
+        $db_user = self::prompt(' User Name:','d2app_php');
+        $db_password = self::prompt(' Password:','d2app_php');
 
         $template_path = Yii::getPathOfAlias('application.config') . '/main-local_template.php';
         $org_path = Yii::getPathOfAlias('application.config') . '/main-local.php';
 
         $template = file_get_contents($template_path);
 
+        $template = str_replace('****host****', $db_host, $template);
         $template = str_replace('***db_name***', $db_name, $template);
         $template = str_replace('***user_name***', $db_user, $template);
         $template = str_replace('***user_password***', $db_password, $template);
 
-        file_put_contents($org_path, $template);
+        file_put_contents($org_path, $template);   
+        Yii::app()->setComponent('db',[
+            'tablePrefix' => '',
+            // MySQL
+            'connectionString' => 'mysql:host='.$db_host.';dbname='.$db_name,
+            'emulatePrepare' => true,
+            'username' => $db_user,
+            'password' => $db_password,
+            'charset' => 'utf8',
+            'enableProfiling' => TRUE, //rada sql statementus
+            'enableParamLogging' => TRUE, //add            
+        ]);
 
         echo 'Settings saved' . PHP_EOL;
+
     }
 
 }

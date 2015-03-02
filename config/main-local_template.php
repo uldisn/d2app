@@ -39,7 +39,7 @@ $localConfig = array(
         'db' => array(
             'tablePrefix' => '',
             // MySQL
-            'connectionString' => 'mysql:host=localhost;dbname=***db_name***',
+            'connectionString' => 'mysql:host=****host****;dbname=***db_name***',
             'emulatePrepare' => true,
             'username' => '***user_name***',
             'password' => '***user_password***',
