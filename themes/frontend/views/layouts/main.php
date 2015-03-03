@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="<?php echo Yii::app()->language ?>">
 <head>
-<?
+<?php
     $app_asset_path = Yii::app()->assetManager->publish(
         Yii::app()->theme->basePath . '/assets',
         true,   // hash by name
