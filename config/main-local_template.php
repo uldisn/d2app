@@ -47,21 +47,21 @@ $localConfig = array(
             'enableProfiling' => TRUE, //rada sql statementus
             'enableParamLogging' => TRUE, //add            
         ),
-        'log'           => array(
-            'class'  => 'CLogRouter',
-            'enabled' => true,
-            'routes' => array(
-                array(
-                    'class'  => 'CFileLogRoute',
-                    'levels' => 'error, warning',
-                    'logPath' => dirname(__FILE__).'/../',
-                ),
-                array(
-                    'class'=>'vendor.malyshev.yii-debug-toolbar.YiiDebugToolbarRoute',
-                    'ipFilters'=>array('127.0.0.1','192.168.1.215'),
-                ),
-            ),
-        ),
+//        'log'           => array(
+//            'class'  => 'CLogRouter',
+//            'enabled' => true,
+//            'routes' => array(
+//                array(
+//                    'class'  => 'CFileLogRoute',
+//                    'levels' => 'error, warning',
+//                    'logPath' => dirname(__FILE__).'/../',
+//                ),
+//                array(
+//                    'class'=>'vendor.malyshev.yii-debug-toolbar.YiiDebugToolbarRoute',
+//                    'ipFilters'=>array('127.0.0.1','192.168.1.215'),
+//                ),
+//            ),
+//        ),
         
     ),
     'params' => array(

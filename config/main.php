@@ -558,7 +558,8 @@ $mainConfig = array(
         'AuditTrail' => array(
             'table' =>'s_audit_trail',
         ),
-        'ace_assets' => realpath($applicationDirectory . '/vendor/bopoda/ace/assets'),
+        //'ace_assets' => realpath($applicationDirectory . '/../../ace_admin/v_2_3/assets'),
+        'ace_assets' => realpath($applicationDirectory . '/../../bopoda/ace/assets'),
     ),
 );
 
