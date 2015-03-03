@@ -34,7 +34,7 @@ EOS;
         $db_host = self::prompt(' Host:','127.0.0.1');
         $db_name = self::prompt(' DB Name:','d2app');
         $db_user = self::prompt(' User Name:','d2app_php');
-        $db_password = self::prompt(' Password:','d2app_php');
+        $db_password = self::prompt(' Password:','');
 
         $template_path = Yii::getPathOfAlias('application.config') . '/main-local_template.php';
         $org_path = Yii::getPathOfAlias('application.config') . '/main-local.php';
