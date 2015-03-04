@@ -127,15 +127,15 @@ $consoleConfig = array(
         'composer.callbacks' => array(
             'post-install' => array(
                     array('yiic', 'inst_d2app'),
-                    array('yiic', 'migrate', '--interactive=1','--module=audittrail'),
-                    array('yiic', 'migrate', '--interactive=1','--module=core_init'),
-                    array('yiic', 'migrate', '--interactive=1','--module=yii-user'),
-                    array('yiic', 'migrate', '--interactive=1','--module=d2files'),
-                    array('yiic', 'migrate', '--interactive=1','--module=d2person'),
-                    array('yiic', 'migrate', '--interactive=1','--module=d2company'),
-                    array('yiic', 'migrate', '--interactive=1','--module=core_main'),
-                    array('yiic', 'migrate', '--interactive=1','--module=yeeki'),
-                    array('yiic', 'migrate', '--interactive=1','--module=d1files'),
+                    array('yiic', 'migrate', '--interactive=0','--module=audittrail'),
+                    array('yiic', 'migrate', '--interactive=0','--module=core_init'),
+                    array('yiic', 'migrate', '--interactive=0','--module=yii-user'),
+                    array('yiic', 'migrate', '--interactive=0','--module=d2files'),
+                    array('yiic', 'migrate', '--interactive=0','--module=d2person'),
+                    array('yiic', 'migrate', '--interactive=0','--module=d2company'),
+                    array('yiic', 'migrate', '--interactive=0','--module=core_main'),
+                    array('yiic', 'migrate', '--interactive=0','--module=yeeki'),
+                    array('yiic', 'migrate', '--interactive=0','--module=d1files'),
             ),            
         ),    
 //        'composer.callbacks' => array(
@@ -156,10 +156,10 @@ $consoleConfig = array(
 //                "To complete the update process, please run:\n\n    app/yiic migrate\n\nfrom your project directory."
 //            ),
 //            #'post-install'                     => array(
-//            #                                          array('yiic', 'migrate', '--interactive=1'),
+//            #                                          array('yiic', 'migrate', '--interactive=0'),
 //            #                                          array('yiic', 'foo', '--bar=1'),
 //            #                                      ),
-//            #'post-update'                      => array('yiic', 'migrate', '--interactive=1'),
+//            #'post-update'                      => array('yiic', 'migrate', '--interactive=0'),
 //        ),
     ))
 );
