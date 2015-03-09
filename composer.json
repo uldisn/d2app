@@ -16,7 +16,7 @@
         "yiisoft/yii":"1.1.16",
         "crisu83/yii-rights":"@dev",
         "clevertech/yiibooster":"2.1.*",
-        "yiiext/migrate-command":"dev-master#35f315b as 0.7.2.1",
+        "yiiext/migrate-command":"yiiext/migrate-command as 0.7.2.1",
         "schmunk42/multi-theme":"0.1.*",
         "phundament/p3extensions":"0.17.*",        
         "schmunk42/web-user-behavior":"0.1.*",
