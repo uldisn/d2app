@@ -23,6 +23,7 @@ $baseUrl              = (dirname($_SERVER['SCRIPT_NAME']) == '/' || dirname($_SE
 // main application configuration
 $mainConfig = array(
     'basePath'   => $applicationDirectory,
+    'runtimePath' => $applicationDirectory . '/../../../runtime',    
     'name'       => 'D2APP',
     'theme'      => 'frontend', // theme is copied eg. from vendor/p3bootstrap
     'language'   => 'en', // default language, see also components.langHandler
