@@ -54,4 +54,6 @@ return array (
   'Verification Code' => 'Verifizierungscode',
   'Widgets' => '',
   'are required' => 'sind erforderlich',
+  'Label lv' => 'Latviešu',  
+  'Label en' => 'English', 
 );
