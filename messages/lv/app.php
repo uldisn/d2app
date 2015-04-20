@@ -68,4 +68,6 @@ return array (
   'User' => 'Lietotājs',
   'Users' => 'Lietotāji',
   'are required' => 'obligāts',
+  'Label lv' => 'Latviešu',  
+  'Label en' => 'English', 
 );
