@@ -67,4 +67,6 @@ return array (
   'Verification Code' => 'Patvirtinimo kodas',
   'Widgets' => '',
   'are required' => 'Reikalaujama',
+  'Label lv' => 'Latviešu',  
+  'Label en' => 'English', 
 );
