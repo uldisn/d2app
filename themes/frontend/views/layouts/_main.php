@@ -60,27 +60,27 @@
             }
 			</script>
 
-                                        
+<?php
+$aMenuOfficeCompanies = array();
+if (Yii::app()->sysCompany->getActiveCompanyName()) {
 
-        <?php
-        $aMenuOfficeCompanies = array();
-        if (Yii::app()->sysCompany->getActiveCompanyName()) {
-$aMenuOfficeCompanies = array(
-                'label' => Yii::app()->sysCompany->getActiveCompanyName(),
-    'url' => '#',
-    'items' => array(
-                    array('label' => Yii::t('app', 'Your companies'),
-                    ),
-                )
+    $aMenuOfficeCompanies = array(
+        'label' => Yii::app()->sysCompany->getActiveCompanyName(),
+        'url' => '#',
     );
+    if (count(Yii::app()->sysCompany->getClientCompanies()) > 1) {
+        $aMenuOfficeCompanies['items'][] = array(
+            'label' => Yii::t('app', 'Your companies'),
+        );
 
-            foreach (Yii::app()->sysCompany->getClientCompanies() as $mCcmp) {
-                $aMenuOfficeCompanies['items'][] = array(
+        foreach (Yii::app()->sysCompany->getClientCompanies() as $mCcmp) {
+            $aMenuOfficeCompanies['items'][] = array(
                 'label' => $mCcmp['ccmp_name'],
-                            'url' => array_merge(array(''), $_GET, array(Yii::app()->sysCompany->data_key => $mCcmp['ccmp_id'])),
-    );
-}
+                'url' => array_merge(array(''), $_GET, array(Yii::app()->sysCompany->data_key => $mCcmp['ccmp_id'])),
+            );
         }
+    }
+}
 
 $aMenuLanguages = array();
 if (count(Yii::app()->langHandler->languages) > 1) {
