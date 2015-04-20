@@ -68,4 +68,6 @@ return array (
   'Widgets' => '',
   'Your companies' => '',
   'are required' => '',
+  'Label lv' => 'Latviešu',  
+  'Label en' => 'English', 
 );
