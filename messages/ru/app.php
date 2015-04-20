@@ -67,4 +67,6 @@ return array (
   'Verification Code' => 'Код подтверждения',
   'Widgets' => '',
   'are required' => 'Требуются',
+  'Label lv' => 'Latviešu',  
+  'Label en' => 'English', 
 );
