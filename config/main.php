@@ -360,7 +360,7 @@ $mainConfig = array(
                 '^user/activation/(.*)'      => 'frontend',
                 // backend
                 '^user/(.*)'                 => 'frontend',
-                '^rights/(.*)'               => 'backend2',
+                //'^rights/(.*)'               => 'backend2',
                 '^sakila/(.*)'               => 'backend2',
                 '^p3(.*)'                    => 'backend2',
                 '^ckeditorConfigurator/(.*)' => 'backend2',
