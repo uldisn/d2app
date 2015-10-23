@@ -144,6 +144,12 @@ $this->widget(
                         ),
                     )
                 ),
+                array(
+                    'label' => Yii::t('app', 'About'),
+                    'icon' => 'info wait',
+                    'url' => array('/site/about'),
+                    
+                ),
             ),
         ),
     )
