@@ -126,7 +126,7 @@ $mainConfig = array(
         ),          
         'd2files' => array(
              'class' => 'vendor.dbrisinajumi.d2files.D2filesModule',
-             'upload_dir' => 'root.upload.d2files_' . basename(dirname($applicationDirectory)) . '_' . basename($applicationDirectory),
+	     'upload_dir' => 'root.upload.d2files', //files upload in /upload/d2files directory
              'accept_file_types' => '/\.(gif|pdf|dat|jpe?g|png|doc|docx|xls|xlsx|htm)$/i',
         ),
 //        'email' => array(
