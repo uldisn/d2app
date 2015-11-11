@@ -63,10 +63,11 @@ $mainConfig = array(
         'vendor.yiiext.fancybox-widget.*', // Fancybox Widget
         'vendor.clevertech.yiibooster.src.widgets.*', //
         'editable.*', // Include X-Editable for Yii classes
-        'audittrail.models.*', //++
-        'audittrail.behaviors.*', //++
-        'vendor.schmunk42.relation.behaviors.*', //++
-        'vendor.dbrisinajumi.d2company.models.*', //++
+        'audittrail.models.*', 
+        'audittrail.behaviors.*',
+        'vendor.schmunk42.relation.behaviors.*',
+        'vendor.schmunk42.relation.widgets.*',
+        'vendor.dbrisinajumi.d2company.models.*',
         'vendor.dbrisinajumi.d2company.*',
         'vendor.dbrisinajumi.DbrLib.*',
         'vendor.pentium10.yii-remember-filters-gridview.src.protected.components.*',
