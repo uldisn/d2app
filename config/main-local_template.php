@@ -32,6 +32,15 @@ $localConfig = array(
                 //'bootstrap.gii', // bootstrap generator
             ),
         ),
+       'd2mailer' => array(
+            'class' => 'vendor.dbrisinajumi.d2mailer.D2mailerModule',
+            'fromEmail' => 'uldis@weberp.lv',
+            'fromName' => 'Uldis Nelsons',
+            'smtp_host' => 'smtp.hosts.lv',
+            'smtp_port' => 25,
+            'logging' => true,
+        ),
+        
 
     ),
     'components' => array(
@@ -47,21 +56,28 @@ $localConfig = array(
             'enableProfiling' => TRUE, //rada sql statementus
             'enableParamLogging' => TRUE, //add            
         ),
-//        'log'           => array(
-//            'class'  => 'CLogRouter',
-//            'enabled' => true,
-//            'routes' => array(
-//                array(
-//                    'class'  => 'CFileLogRoute',
-//                    'levels' => 'error, warning',
-//                    'logPath' => dirname(__FILE__).'/../',
-//                ),
-//                array(
-//                    'class'=>'vendor.malyshev.yii-debug-toolbar.YiiDebugToolbarRoute',
-//                    'ipFilters'=>array('127.0.0.1','192.168.1.215'),
-//                ),
-//            ),
-//        ),
+        'log'           => array(
+            'class'  => 'CLogRouter',
+            'enabled' => true,
+            'routes' => array(
+                //log in file
+                array(
+                    'class'  => 'CFileLogRoute',
+                    'levels' => 'error, warning',
+                    'logPath' => dirname(__FILE__).'/../',
+                ),
+                // FOR DEV - LOG ON SCREEN
+                array(
+                    'class'  => 'CWebLogRoute',
+                    'levels' => 'error, warning',
+                ),
+                // FOR DEV - add info
+                //array(
+                //    'class'=>'vendor.malyshev.yii-debug-toolbar.YiiDebugToolbarRoute',
+                //    'ipFilters'=>array('127.0.0.1','192.168.1.215'),
+                //),
+            ),
+        ),
         
     ),
     'params' => array(
