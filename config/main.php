@@ -92,13 +92,6 @@ $mainConfig = array(
         'vendor.uldisn.ace.widgets.*',         
     ),
     'modules'    => array(
-        'session' => array (
-            'sessionName' => 'kods',
-            'cookieMode' => 'only',
-//            'class' => 'system.web.CDbHttpSession',
-//            'connectionID' => 'db',
-//            'sessionTableName' => 's_sessions',
-        ),
         'wiki' => array(
             'class' => 'vendor.dbrisinajumi.yeeki.WikiModule',
         ),
@@ -202,6 +195,16 @@ $mainConfig = array(
     ),
     // application components
     'components' => array(
+        'session' => array(
+            'sessionName' => 'd2appSESSION',
+            'class' => 'CDbHttpSession',
+            'connectionID' => 'db',
+            'sessionTableName' => 'YiiSession',
+            'useTransparentSessionID' => isset($_POST['PHPSESSID']) ? true : false,
+            'autoStart' => 'false',
+            'cookieMode' => 'only',
+            'timeout' => 300,
+        ),     	
         'cache' => array(
             'class' => 'CFileCache',
         ),
