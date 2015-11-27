@@ -195,6 +195,9 @@ $mainConfig = array(
     ),
     // application components
     'components' => array(
+    	/**
+    	 * @see http://www.refulz.com/configuring-session-in-yii-framework-cdbhttpsession/
+    	 */ 
         'session' => array(
             'sessionName' => 'd2appSESSION',
             'class' => 'CDbHttpSession',
