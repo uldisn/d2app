@@ -42,7 +42,7 @@ return array(
                     'visible' => Yii::app()->user->checkAccess('Administrator'),
                 ),
                 array(
-                    'label' => Yii::t('D2companyModule.model', 'Positions'),
+                    'label' => Yii::t('dbr_app', 'Positions'),
                     'url' => array('/d2company/cucpUserCompanyPosition'),
                     'visible' => Yii::app()->user->checkAccess('Administrator'),
                 ),                
