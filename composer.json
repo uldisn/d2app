@@ -13,7 +13,7 @@
     ],
      "require": {
         "php": ">=5.3.0",
-        "yiisoft/yii":"1.1.27",
+        "yiisoft/yii":"1.1.29",
         "crisu83/yii-rights":"@dev",
         "clevertech/yiibooster":"2.1.*",
         "yiiext/migrate-command":"0.8.0 as 0.7.2.1",
